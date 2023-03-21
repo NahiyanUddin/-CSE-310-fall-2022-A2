@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+    </head>
+
+    <body>
+        Hello world
+        <br>
+        {{ name }}
+        <br>
+        {{ ID }}
+        <br>
+        {{ courses }}
+        <br>
+        {% for c in courses %}
+            Course title: {{ c }}
+            <br>
+        {% endfor %}
+
+        {% if marks >= 80 %}
+            A+
+            <br>
+        {% elif marks >= 75 %}
+            A
+            <br>
+        {% elif marks >= 70 %}
+            A-
+            <br>
+        {% elif marks >= 65 %}
+            B+
+            <br>
+        {% elif marks >= 60 %}
+            B
+            <br>
+        {% elif marks >= 55 %}
+            B-
+            <br>
+        {% elif marks >= 50 %}
+            C+
+            <br>
+        {% elif marks >= 45 %}
+            C
+            <br>
+        {% elif marks >= 40 %}
+            D
+            <br>
+        {% else %}
+            F
+            <br>
+        {% endif %}
+
+    </body>
+
+</html>
